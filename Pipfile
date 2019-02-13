@@ -23,8 +23,6 @@ pillow = "*"
 imgurpython = "*"
 sqlparse = "*"
 html2bbcode = "*"
-mod-wsgi-httpd = "*"
-mod-wsgi = "*"
 mysqlclient = "*"
 
 [requires]

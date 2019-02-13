@@ -87,15 +87,12 @@ DEBUG = True
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'what_manager2',  # Or path to database file if using sqlite3.
-        # The following settings are not used with sqlite3:
+        'NAME': 'what_manager2',
         'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',
-        # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-        'PORT': '',  # Set to empty string for default.
-    }
+        'PASSWORD': 'password',
+        'HOST': 'db',
+        'PORT': '3306',
+    },
 }
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
@@ -216,8 +213,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Web Server
-    'mod_wsgi.server',
     # Library apps
     'bootstrapform',
     # WhatManager2 apps
